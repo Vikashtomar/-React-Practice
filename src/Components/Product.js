@@ -8,7 +8,8 @@ const [cart ,setCart] = useState([])
     {id:1,name:"Product A",price:20},
     {id:2,name:"Product B",price:30},
     {id:3,name:"Product C",price:40},
-    {id:4,name:"Product D",price:50}
+    {id:4,name:"Product D",price:50},
+    {id:5, name: "Product E", price:60}
 ]
 
 
