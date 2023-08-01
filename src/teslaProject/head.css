@@ -1,0 +1,7 @@
+.menu{
+    display: flex;
+    /* background-color: green; */
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    align-items: center;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 import Section from './Section'
 
-function Header({name}) {
+function Header({name,lname}) {
   return (
     <div>
-        <Section name={name} />
+        <Section name={name} lname = {lname} />
     </div>
   )
 }

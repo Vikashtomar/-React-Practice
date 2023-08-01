@@ -1,10 +1,10 @@
 import React from 'react'
 import Footer from './Footer'
 
-function Section({name}) {
+function Section({name,lname}) {
   return (
     <div>
-        < Footer name={name}/>
+        < Footer name={name} lname = {lname}/>
     </div>
   )
 }

@@ -1,23 +1,23 @@
-/** @format */
-
-import React, { useContext } from "react";
-import { CountContext } from "../../App";
+ import React,{useContext} from 'react'
+import { CountContext } from '../../App'
+ 
 
 function FileA() {
-  const { count, setCount } = useContext(CountContext);
-
-  return (
-    <div>
-      <button onClick={(e) =>setCount(count + 1)}>Increment</button>
-
+   const {count,setCount} = useContext(CountContext);
   
-    <button onClick={(e)=>{setCount(count<=0? 0: count -1)}}>Decrement</button>
+  
+   return (
+     <div>
 
-      <h1>{count}</h1>
-    </div>
+    <button onClick={(e)=> setCount(count+1)}>  Increment </button>
 
+      <button onClick={(e)=>{setCount((count <= 0) ? 0 : count -1)}}> Decrement </button>
     
-  );
-}
+    
 
-export default FileA;
+
+     </div>
+   )
+ }
+ 
+ export default FileA

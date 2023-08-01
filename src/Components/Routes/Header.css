@@ -1,0 +1,17 @@
+.rout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: tan;
+}
+
+ ul{
+    display: flex;
+    list-style:none;
+       
+}
+a {
+   padding:.5rem 1rem ;
+    text-decoration: none;
+    color: #fff;
+}
