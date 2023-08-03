@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Coutntry from './Components/salectCountry/Coutntry';
+import App from './Components/ContextApiProgram/App';
+
 // import Main from './Components/Crypto Route/Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +12,8 @@ root.render(
   <React.StrictMode>
     {/* <Main /> */}
     {/* <App/> */}
-    <Coutntry />
+    <App />
+   
   </React.StrictMode>
 );
 
