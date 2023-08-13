@@ -2,6 +2,8 @@
  import axios from 'axios'
 import { globalContext } from './App';
 
+import "./Product.css"
+
  
  function Product() {
     const [mydata,setMydata] = useState([]);
@@ -23,15 +25,18 @@ function handleClick(e,item)
 }
     
    return(
-    <div>
+    <div className='product'>
         {mydata.map((value)=>{
             const {title,image,price} = value;
             return <>
         <h1>{title}</h1>
-        <img src={image} alt="" />
+
+        <div className="photo">
+            <img src={image}/>
+        </div>
+    
         <p>${price}.0</p><br/>
        
-            {/* <a href={handleClick}>Add to cart</a> */}
             <button onClick={(e)=>handleClick(e, value)}> Add to Cart</button>
             </>
 
