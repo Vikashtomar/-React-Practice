@@ -14,6 +14,7 @@ function Header() {
         <h3>
             Total Cost: -  {cost}
         </h3>
+
     </div>
   )
 }

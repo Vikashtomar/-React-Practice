@@ -3,7 +3,7 @@ import { globalState } from './App'
  
  function Main() {
 
-    const {cart,setCart,cost,setCost} = useContext(globalState)
+    const {cart,setCart,cost,setCost,singalVal,setsVal} = useContext(globalState)
 
     const products = [
         {name:"Item 1",des:"This is item 1", price:100},
@@ -18,7 +18,7 @@ import { globalState } from './App'
         setCost(cost + value.price)
     }
    return (
-     <div>
+     <div className='item'>
 
     {products.map((value)=>{
         return(
@@ -38,7 +38,10 @@ import { globalState } from './App'
 
             </>
         )
+
+        
     })}
+    
 
 
      </div>

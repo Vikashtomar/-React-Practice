@@ -5,10 +5,14 @@
 }
 .item{
     /* align-items: center; */
+
     margin-top: 40px;
     text-align: center;
     background-color: tan;
-    border: 5px solid black;
+    border: 5px solid rgb(150, 69, 69);
     width: 10%;
+    padding: 5px;
+    
     margin-left: 40px;
+
 }
