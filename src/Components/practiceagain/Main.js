@@ -1,47 +1,74 @@
  import React, { useContext } from 'react'
-import { globalState } from './App'
+import { globalData } from './App'
+ 
+
  
  function Main() {
 
-    const {cart,setCart,cost,setCost,singalVal,setsVal} = useContext(globalState)
+  const {cart,setCart} = useContext(globalData)
+  const {cost,setCost} = useContext(globalData)
+  const products = [
+    {name:"item 1",des:"this is item 1", price: 100},
+    {name:"item 2",des:"this is item 2", price: 200},
+    {name:"item 3",des:"this is item 3", price: 300},
+    {name:"item 4",des:"this is item 4", price: 400}
 
-    const products = [
-        {name:"Item 1",des:"This is item 1", price:100},
-        {name:"Item 2",des:"This is item 2", price:200},
-        {name:"Item 3",des:"This is item 3", price:300}
-    ]
+
+]
+
+function handleClick(e,value){
+  e.preventDefault()
+  setCart([...cart,value])
+  setCost(cost + value.price)
+  
+//  {<Cart/>}
+
+}
 
 
-    function handleClick(e,value){
-        e.preventDefault()
-        setCart([...cart,value])
-        setCost(cost + value.price)
-    }
+function handledlt(e,value,index){
+  e.preventDefault()
+  setCart(cart.filter((a,id) => index!=id))
+  setCost(cost - value.price)
+
+}
+
    return (
-     <div className='item'>
-
-    {products.map((value)=>{
+     <div className='main'>
+      {products.map((value,index)=>{
         return(
-            <>
-            <h1>
-                {value.name}
-            </h1>
-          <h3>
-            {value.des}
-          </h3>
-            <h3>
-                {value.price}
-            </h3>
-            
-            <button onClick={(e)=> handleClick(e,value)}>Add to Cart</button>
-            
+          <div key={index} className='items'>
 
-            </>
+            <p>{value.name}</p>
+            <p>{value.des}</p>
+            <p>{value.price}</p>
+            <button onClick={e=>{handleClick(e,value) }}>Add To Cart</button>
+            </div>
         )
+      })}
 
-        
-    })}
+
+<div className='cart'>
+
+<h1>Cart context</h1>
+{
+  cart.map((value,index)=>{
+    return(
+      <div key={index}  className='left'>
+        <p>
+          {value.name}
+        </p>
+      <p>
+        {value.price}
+      </p>
+      <button onClick={(e)=>handledlt(e,value,index)}>Remove button</button>
+        </div>
+    )
     
+  })
+  
+}
+  </div>
 
 
      </div>
