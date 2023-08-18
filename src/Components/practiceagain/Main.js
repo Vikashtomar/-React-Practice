@@ -11,7 +11,8 @@ import { globalData } from './App'
     {name:"item 1",des:"this is item 1", price: 100},
     {name:"item 2",des:"this is item 2", price: 200},
     {name:"item 3",des:"this is item 3", price: 300},
-    {name:"item 4",des:"this is item 4", price: 400}
+    {name:"item 4",des:"this is item 4", price: 400},
+    {name:"item 5",des:"this is item 5", price: 500}
 
 
 ]
