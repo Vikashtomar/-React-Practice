@@ -10,7 +10,9 @@ function Main() {
 
     const prod = [{name:"item1",des:"This item 1",price:100},
     {name:"item2",des:"This item 2",price:200},
-    {name:"item3",des:"This item 3",price:300}]
+    {name:"item3",des:"This item 3",price:300},
+    {name:"item4",des:"This item 4",price:400},
+  ]
 
     function handleclick(e,value){
         e.preventDefault()
