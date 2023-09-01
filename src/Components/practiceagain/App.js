@@ -1,25 +1,40 @@
- import React, { createContext, useState } from 'react'
- import Header from './Header'
-import Main from './Main'
+//  import React, { createContext, useState } from 'react'
+//  import Header from './Header'
+// import Main from './Main'
  
-import './app.css'
- export const globalData = createContext();
+// import './app.css'
+//  export const globalData = createContext();
  
- function App() {
-  const [cart,setCart] = useState([])
-  const [cost,setCost] = useState(0)
+//  function App() {
+//   const [cart,setCart] = useState([])
+//   const [cost,setCost] = useState(0)
 
 
-   return (
-     <div >
-<globalData.Provider value={{cart,setCart,cost,setCost}}>
+//    return (
+//      <div >
+// <globalData.Provider value={{cart,setCart,cost,setCost}}>
 
-      <Header/>
+//       <Header/>
            
-      <Main/>
-</globalData.Provider>
-     </div>
-   )
- }
+//       <Main/>
+// </globalData.Provider>
+//      </div>
+//    )
+//  }
  
- export default App
+//  export default App
+
+
+
+import React from 'react'
+import Main from '../../RandomJokes/Main'
+
+function App() {
+  return (
+    <div>
+      <Main />
+    </div>
+  )
+}
+
+export default App
