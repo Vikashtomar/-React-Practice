@@ -8,7 +8,7 @@
         
         axios.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single")
         .then((res)=>{
-            console.log(res.data)
+            console.log(res)
             setData(res.data.joke)
           
         })
