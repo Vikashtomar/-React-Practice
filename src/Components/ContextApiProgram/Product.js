@@ -17,7 +17,7 @@ import "./Product.css"
             setMydata(res.data)
         })  },[])
 
-
+console.log(res)
 function handleClick(e,item)
 {
     e.preventDefault()
@@ -25,6 +25,7 @@ function handleClick(e,item)
 }
     
    return(
+    
     <div className='product'>
         {mydata.map((value)=>{
             const {title,image,price} = value;
