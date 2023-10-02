@@ -13,6 +13,7 @@ function Main() {
     {name:"item3",des:"This item 3",price:300},
     {name:"item4",des:"This item 4",price:400},
     {name:"item5",des:"This item 5",price:500},
+    {name:"item6,", des:"This is item 6",price:600},
   ]
 
     function handleclick(e,value){
