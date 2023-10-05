@@ -17,6 +17,8 @@ function Singleblog() {
       });
   }, []);
 
+  console.log(response)
+
   return (
     <div className="singleBlog">
       <h2>{singleBlog.title}</h2>
